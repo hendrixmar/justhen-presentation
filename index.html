@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JUSTHEN · Plantilla de presentación</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+<!--
+  PLANTILLA DE PRESENTACIÓN JUSTHEN
+  · Cada <section class="slide" data-layout="…"> es una diapositiva. Duplica, reordena o elimina según necesites.
+  · Marca con data-in los elementos que deben entrar animados (en cascada) al mostrar la diapositiva.
+  · Navegación: → / ← / espacio / clic / deslizar. F = pantalla completa. Esc = vista general. ?#n abre la diapositiva n.
+  · Layouts incluidos: portada · agenda · seccion · contenido · tres-columnas · cifras · cita · timeline · equipo · comparativa · cierre
+-->
+<div class="deck" data-deck>
+
+  <!-- 1 · PORTADA -->
+  <section class="slide" data-layout="portada">
+    <div class="bg-mark" aria-hidden="true"><img src="assets/isotipo.png" alt=""></div>
+    <div class="slide-body">
+      <img class="logo" src="assets/isotipo.png" alt="JUSTHEN" data-in>
+      <p class="eyebrow" data-in>Propuesta estratégica · 2026</p>
+      <h1 data-in>Título de la<br><em>presentación</em></h1>
+      <p class="lead" data-in>Subtítulo o descripción breve del documento. Una línea que resuma el propósito de la sesión.</p>
+      <div class="meta-row" data-in>
+        <div><span>Dirigido a</span><strong>Comité Directivo</strong></div>
+        <div><span>Preparado por</span><strong>JUSTHEN</strong></div>
+        <div><span>Estatus</span><strong>Confidencial</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · AGENDA -->
+  <section class="slide" data-layout="agenda">
+    <header class="slide-head"><p class="eyebrow" data-in>Agenda</p><h2 data-in>Lo que veremos hoy</h2></header>
+    <ol class="agenda">
+      <li data-in><span>01</span><div><strong>Contexto y diagnóstico</strong><p>Situación actual y retos identificados.</p></div></li>
+      <li data-in><span>02</span><div><strong>Propuesta de valor</strong><p>Los tres pilares aplicados a su organización.</p></div></li>
+      <li data-in><span>03</span><div><strong>Plan de implementación</strong><p>Fases, hitos y responsables.</p></div></li>
+      <li data-in><span>04</span><div><strong>Inversión y siguientes pasos</strong><p>Alcance, tiempos y decisión.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- 3 · SEPARADOR DE SECCIÓN -->
+  <section class="slide" data-layout="seccion">
+    <div class="slide-body">
+      <p class="section-n" data-in>01</p>
+      <h2 data-in>Contexto y <em>diagnóstico</em></h2>
+      <p class="lead" data-in>Una frase que enmarque la sección.</p>
+    </div>
+  </section>
+
+  <!-- 4 · CONTENIDO (texto + visual) -->
+  <section class="slide" data-layout="contenido">
+    <header class="slide-head"><p class="eyebrow" data-in>Diagnóstico</p><h2 data-in>Título de la diapositiva de contenido</h2></header>
+    <div class="two-col">
+      <div class="col" data-in>
+        <p>Párrafo introductorio con el mensaje principal. Mantén una idea por diapositiva y apóyala con tres puntos como máximo.</p>
+        <ul class="bullets">
+          <li data-in>Primer hallazgo relevante con dato o evidencia.</li>
+          <li data-in>Segundo hallazgo que conecta con la oportunidad.</li>
+          <li data-in>Tercer hallazgo que justifica la acción.</li>
+        </ul>
+      </div>
+      <figure class="visual" data-in>
+        <img src="assets/logo-mockup.jpg" alt="Espacio para imagen, gráfico o captura">
+        <figcaption>Sustituye esta imagen por un gráfico, captura o fotografía.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 · TRES COLUMNAS (pilares) -->
+  <section class="slide" data-layout="tres-columnas">
+    <header class="slide-head"><p class="eyebrow" data-in>La Trifecta Estratégica</p><h2 data-in>Tres pilares. <em>Un solo núcleo.</em></h2></header>
+    <div class="cols-3">
+      <article class="pill pill-green" data-in><span class="n">01</span><h3>Estrategia Comercial</h3><p>Arquitecturas y modelos comerciales B2B &amp; B2C, de la prospección al cierre.</p></article>
+      <article class="pill pill-indigo" data-in><span class="n">02</span><h3>IA &amp; Automatización</h3><p>Eficiencia operativa y modernización tecnológica aplicada a la dirección.</p></article>
+      <article class="pill pill-copper" data-in><span class="n">03</span><h3>Marketing &amp; Medios</h3><p>Posicionamiento premium y construcción de autoridad de marca.</p></article>
+    </div>
+  </section>
+
+  <!-- 6 · CIFRAS -->
+  <section class="slide" data-layout="cifras">
+    <header class="slide-head"><p class="eyebrow" data-in>Resultados esperados</p><h2 data-in>Impacto en <em>números</em></h2></header>
+    <div class="stats">
+      <div class="stat" data-in><strong>+<span data-count="35">0</span>%</strong><span>Incremento de facturación</span></div>
+      <div class="stat" data-in><strong>−<span data-count="40">0</span>%</strong><span>Tiempo operativo en procesos clave</span></div>
+      <div class="stat" data-in><strong><span data-count="3">0</span>×</strong><span>Alcance de marca en canales B2B</span></div>
+      <div class="stat" data-in><strong><span data-count="90">0</span> días</strong><span>Para primeros resultados medibles</span></div>
+    </div>
+    <p class="footnote" data-in>Cifras ilustrativas de la plantilla. Sustituir por datos reales del cliente.</p>
+  </section>
+
+  <!-- 7 · CITA -->
+  <section class="slide" data-layout="cita">
+    <div class="slide-body">
+      <span class="quote-mark" data-in>“</span>
+      <blockquote data-in>La estrategia sin ejecución es una intención. La ejecución sin estrategia es un desgaste.</blockquote>
+      <p class="cite" data-in>— Nombre del autor, cargo o empresa</p>
+    </div>
+  </section>
+
+  <!-- 8 · TIMELINE -->
+  <section class="slide" data-layout="timeline">
+    <header class="slide-head"><p class="eyebrow" data-in>Plan de implementación</p><h2 data-in>Hoja de ruta <em>en cuatro fases</em></h2></header>
+    <div class="timeline">
+      <div class="tl-line" aria-hidden="true"><span data-tl-line></span></div>
+      <div class="tl-item" data-in><span class="tl-dot"></span><strong>Fase 1 · Semanas 1–2</strong><h3>Diagnóstico</h3><p>Mapeo comercial, tecnológico y de marca.</p></div>
+      <div class="tl-item" data-in><span class="tl-dot"></span><strong>Fase 2 · Semanas 3–5</strong><h3>Arquitectura</h3><p>Modelo comercial y hoja de ruta de automatización.</p></div>
+      <div class="tl-item" data-in><span class="tl-dot"></span><strong>Fase 3 · Semanas 6–10</strong><h3>Implementación</h3><p>Procesos, flujos con IA y producción audiovisual.</p></div>
+      <div class="tl-item" data-in><span class="tl-dot"></span><strong>Fase 4 · Continuo</strong><h3>Aceleración</h3><p>Medición, optimización y escalado.</p></div>
+    </div>
+  </section>
+
+  <!-- 9 · EQUIPO -->
+  <section class="slide" data-layout="equipo">
+    <header class="slide-head"><p class="eyebrow" data-in>Equipo</p><h2 data-in>Un especialista <em>por cada pilar</em></h2></header>
+    <div class="cols-3">
+      <article class="member" data-in><div class="avatar av-green">S</div><h3>Stiven</h3><p class="role">Estrategia Comercial</p><p>Diseño y ejecución de estrategias B2B y B2C.</p></article>
+      <article class="member" data-in><div class="avatar av-indigo">H</div><h3>Hendrick</h3><p class="role">IA &amp; Automatización</p><p>Arquitectura digital y adopción de IA.</p></article>
+      <article class="member" data-in><div class="avatar av-copper">J</div><h3>Julián</h3><p class="role">Marketing &amp; Medios</p><p>Narrativa visual y autoridad de marca.</p></article>
+    </div>
+  </section>
+
+  <!-- 10 · COMPARATIVA -->
+  <section class="slide" data-layout="comparativa">
+    <header class="slide-head"><p class="eyebrow" data-in>Antes y después</p><h2 data-in>Del estado actual al <em>estado objetivo</em></h2></header>
+    <div class="compare">
+      <div class="cmp cmp-before" data-in>
+        <h3>Hoy</h3>
+        <ul><li data-in>Procesos comerciales sin estructura.</li><li data-in>Tareas directivas manuales y repetitivas.</li><li data-in>Comunicación de marca inconsistente.</li></ul>
+      </div>
+      <div class="cmp cmp-after" data-in>
+        <h3>Con JUSTHEN</h3>
+        <ul><li data-in>Arquitectura comercial medible, de prospección a cierre.</li><li data-in>Flujos clave automatizados con IA aplicada.</li><li data-in>Marca con autoridad en mercados exigentes.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · CIERRE -->
+  <section class="slide" data-layout="cierre">
+    <div class="slide-body">
+      <img class="logo" src="assets/isotipo.png" alt="JUSTHEN" data-in>
+      <h2 data-in>¿Avanzamos al <em>siguiente paso?</em></h2>
+      <p class="lead" data-in>Agendemos la sesión de diagnóstico y definamos juntos la hoja de ruta.</p>
+      <div class="contact-row" data-in>
+        <span>contacto@justhen.com</span><i></i><span>justhen.com</span><i></i><span>LinkedIn · JUSTHEN</span>
+      </div>
+      <p class="brand-line" data-in>JUSTHEN <small>Estrategia e Innovación</small></p>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud" aria-hidden="true">
+  <img src="assets/isotipo-white.png" alt="">
+  <span class="hud-brand">JUSTHEN</span>
+  <span class="hud-count"><b data-current>1</b> / <span data-total>11</span></span>
+</div>
+<div class="deck-progress" aria-hidden="true"><span data-progress></span></div>
+<button class="hud-btn hud-prev" aria-label="Anterior" data-prev>‹</button>
+<button class="hud-btn hud-next" aria-label="Siguiente" data-next>›</button>
+
+<script src="https://cdn.jsdelivr.net/npm/motion@12.23.12/dist/motion.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>
